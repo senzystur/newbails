@@ -14,10 +14,10 @@
     "wabail",
     "whatsapp-bot"
   ],
-  "homepage": "https://github.com/pou-code/WaBail",
+  "homepage": "https://github.com/senzystur/newbails",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pou-code/WaBail.git"
+    "url": "git+https://github.com/senzystur/newbails.git"
   },
   "license": "MIT",
   "author": "PouCode",
