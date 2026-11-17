@@ -1,8 +1,8 @@
-# <div align='center'>PouCode</div>
+# <div align='center'>senzy</div>
 
 <p align="center">
 
-  <img src="https://files.catbox.moe/i497x5.jpg" width="180" alt="Pou"/>
+  <img src="https://n.uguu.se/ivimRQvAvgnX.jpg" width="180" alt="Pou"/>
 
 </p>
 
@@ -25,18 +25,18 @@ Requires **Node.js 20+** (this package is ESM-only; see [Import](#import)).
 
 From the npm registry (once published):
 ```bash
-npm install @poucode/baileys
+npm install @senzystur/newbails
 ```
 
 Directly from GitHub:
 ```bash
-npm install github:pou-code/Baileys
+npm install github:senzystur/newbails
 ```
 
 Or add it to your `package.json` manually:
 ```json
 "dependencies": {
-  "@poucode/baileys": "latest"
+  "@senzystur/newbails": "latest"
 }
 ```
 
@@ -45,7 +45,7 @@ Already have a bot built on the original `@whiskeysockets/baileys` and don't wan
 name points to this fork:
 ```json
 "dependencies": {
-  "@whiskeysockets/baileys": "npm:poucode/baileys"
+  "@whiskeysockets/baileys": "npm:senzystur/newbails"
 }
 ```
 With this alias, keep using `require('@whiskeysockets/baileys')` in your code as-is — npm will
@@ -53,14 +53,14 @@ resolve it to this fork under the hood.
 
 You can also pin to a specific branch or commit:
 ```bash
-npm install github:pou-code/Baileys#main
+npm install github:senzystur/newbails#main
 ```
 
 ## Import
 
 ESM (works on every supported Node.js version):
 ```javascript
-import makeWASocket, { Browsers, DisconnectReason } from '@poucode/baileys';
+import makeWASocket, { Browsers, DisconnectReason } from '@senzystur/newbails';
 ```
 
 CommonJS: the package is ESM-only, so `require()` only works on Node.js 22.12+ or 20.19+
@@ -69,7 +69,7 @@ CommonJS: the package is ESM-only, so `require()` only works on Node.js 22.12+ o
 const {
   default: makeWASocket,
   // other exports
-} = require('@poucode/baileys');
+} = require('@senzystur/newbails');
 ```
 
 ---
@@ -81,7 +81,7 @@ const {
 const {
   default: makeWASocket,
   Browsers
-} = require('@poucode/baileys');
+} = require('@senzystur/newbails');
 
 const client = makeWASocket({
   browser: Browsers.poucode('Chrome')
@@ -101,7 +101,7 @@ const {
   default: makeWASocket,
   fetchLatestWaWebVersion,
   Browsers
-} = require('@poucode/baileys');
+} = require('@senzystur/newbails');
 
 async function start() {
   // fetchLatestWaWebVersion() resolves to { version, isLatest, error? }
@@ -129,7 +129,7 @@ start();
 const {
   default: makeWASocket,
   makeInMemoryStore
-} = require('@poucode/baileys');
+} = require('@senzystur/newbails');
 const pino = require('pino');
 
 const store = makeInMemoryStore({
